@@ -46,7 +46,7 @@ try {
       $ export CLOUDFLARE_ACCOUNT_ID="${accountId}"
     }
   
-    $$ npx wrangler@${wranglerVersion} pages deploy "${directory}" --project-name="${projectName}" --branch="${branch} --node-compat"
+    $$ npx wrangler@${wranglerVersion} pages deploy "${directory}" --project-name="${projectName}" --node-compat --branch="${branch}"
     `;
 
 		const response = await fetch(
